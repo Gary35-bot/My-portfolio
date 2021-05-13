@@ -7,6 +7,7 @@
     src="https://kit.fontawesome.com/3ce17028e6.js"
     crossorigin="anonymous"
   ></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./aboutme.css"/>
     <link rel="stylesheet" href="index.html">
     
@@ -41,55 +42,60 @@
     <div class="description">
       <h2 class="heading">About <span class="Me"> me</span></h2>
       <p class="wordsofmyself">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-        repellendus nisi aut architecto soluta atque eos numquam, labore maiores
-        enim suscipit vero doloremque corrupti nobis blanditiis deserunt
-        doloribus nam at!
+        
       </p>
     </div>
       
-      <div class="backgroundcard">
-        <img class="aboutimg img" src="./images/C8 Apr21 Gary Africa (3).JPG" alt="Gary Africa" />
+      <div class="backgroundcard" >
+        <img class="aboutimg img" src="./images/C8 Apr21 Gary Africa (3).JPG" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-front"
+        data-aos-delay="5"
+        data-aos-offset="5"> 
         <div>
         <p class="content">
           <h2 class="subheading"> Gary Africa</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae
-          accusamus minus, laboriosam non autem numquam. Recusandae harum est
-          beatae eaque, consequatur nulla aspernatur? Esse sequi hic debitis
-          maxime suscipit?
+          I am a passionate individual that enjoys working with technology. I consider myself to be self-motivated and goal-driven with good interpersonal skills. I am flexible and hardworking when it comes to doing my work and all my focus is getting the job done. I love to go big on things it's either go big or go home. Technology changes the world which I love and respect. I just love how things work behind the scene and working with new tech.
+
+        </p>
+        <p class="content">
+            <h2 class="subheading-1"> Educational Background</h2>
+            <p>Matric in 2017- Bishop lavis high school</p>
+           <p>ICollege 2019: Technical support</p> 
+
+
         </p>
         <button class="CvButton">Download My Cv</button>
       </div>
       </div>
 
       <div>
-        <h2 class=heading>RESUME</h2>
+        <h2 class=heading-1>RESUME</h2>
       </div>
       <div class="ResumeContainer">
         
         <div class="Resume-1"></div>
-        <div class="Resume1 item1">
+        <div class="Resume1 item1" data-aos="fade-up" >
           <h2>2018-2019</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nisi atque culpa vero obcaecati et ad impedit ipsam suscipit saepe dignissimos magni quia aliquid sed mollitia repellat, porro recusandae dolore!
           </p>
         </div>
 
-        <div class="Resume1 item2">
+        <div class="Resume1 item2" data-aos="fade-down">
           <h2>2019-2020</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis maiores facilis porro, reiciendis aut quas et quaerat fuga, animi laudantium impedit ad mollitia. Laboriosam eligendi adipisci in totam at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ratione, earum fugiat fuga corrupti dolorem sequi maiores deserunt, tenetur enim necessitatibus hic omnis sint dolore placeat a asperiores dolor! Minima.
           </p>
         </div>
 
-        <div class="Resume1 item3">
+        <div class="Resume1 item3" data-aos="fade-up">
           <h2>2020-midyear</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque nemo odit eaque, natus voluptate tempora nobis eius eum nostrum ratione amet numquam assumenda vero, ex ea error omnis ipsum.
           </p>
         </div>
 
-        <div class="Resume1 item4">
+        <div class="Resume1 item4" data-aos="fade-down">
           <h2>2020-2021(Big Changes)</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quisquam sed molestiae quam necessitatibus? Reiciendis voluptate natus consequuntur illo, magnam adipisci architecto non reprehenderit veritatis hic nihil quod, nam corporis?
@@ -98,17 +104,33 @@
 
       </div>
 
-      <div class="background-style1">
-        <h2 class="heading-1"><span class="Me">My</span> Skills<h2>
+      
+        <h2 class="heading-1"><span class="Me">My</span>Programming Skills<h2>
+
       <div class="bankground-style">
         <div class="icons-3 link">
-          <a href="#" class="html-icon"><i class="fab fa-html5"></i></a>
-          <a href="#" class="css-icon"><i class="fab fa-css3-alt"></i> </a>
-          <a href="#" class="Javescrip-icon"><i class="fab fa-js-square"></i></a>
-          <a href="#" class="Python"><i class="fab fa-python"></i></a>
+
+          <div class="background-style1" data-aos="flip-right">
+          <a href="#" class="icon-color"><i class="fab fa-html5"></i></a>
+        </div>
+
+        <div class="background-style1" data-aos="flip-right">
+          <a href="#" class="icon-color"><i class="fab fa-css3-alt"></i> </a>
+        </div>
+
+        <div class="background-style1" data-aos="flip-right">
+          <a href="#" class="icon-color"><i class="fab fa-js-square"></i></a>
+        </div>
+
+        <div class="background-style1" data-aos="flip-right">
+          <a href="#" class="icon-color"><i class="fab fa-python"></i></a>
+        </div>
       </div>
       </div>
-       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
   </body>
 </html>
