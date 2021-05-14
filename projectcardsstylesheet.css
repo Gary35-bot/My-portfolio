@@ -15,14 +15,71 @@ body {
 .main {
   margin-left: 80px;
 }
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3 linear;
+  max-width: 80px;
+  padding: 50px 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.navbar-links {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  gap: 30px;
+}
+.navbar-link {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+.initial {
+  color: white;
+  font-size: 40px;
+  padding: 15px;
+  margin: 5px;
+  font-weight: 1000;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 35%; */
+}
+.subheading {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 75px;
+  color: white;
+}
 .cardcontainer {
   margin: 5%;
- display: flex;
- flex-wrap: wrap;
- padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 .Cards {
-  background: rgba(79, 86, 149, 1);
+  background: rgba(8, 8, 8, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -35,18 +92,17 @@ body {
   display: grid;
   justify-content: center;
   flex-direction: column;
-  
 }
+
 .card-items {
-  background: rgba(0, 214, 233, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(253, 126, 20, 1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: center;
-  
+
   flex: 1 1 150px;
   flex: 0 1 150px;
   display: grid;
@@ -56,16 +112,20 @@ body {
 img {
   height: 250px;
   width: 300px;
-  object-fit: fill;
+  object-fit: contain;
 }
+
 .button-2 {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 15px;
   margin: 5px;
   flex-direction: column;
-  color: white;
+  color: orange;
+  gap: 10px;
+  color: black;
 }
+
 .info {
   display: flex;
   justify-content: center;
@@ -73,5 +133,33 @@ img {
   margin: 50px;
   margin-top: 5%;
   margin-bottom: -5%;
+}
 
+@media screen and (max-width: 800px) {
+  #navbar {
+    left: -100%;
+    transition: all 0.3s linear;
+  }
+
+  #navbar.active {
+    left: 0;
+  }
+  .navbar-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .cardcontainer {
+    margin: 0;
+  }
+  .head {
+    margin: 0;
+    font-size: 25px;
+  }
+  
 }

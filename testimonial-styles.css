@@ -30,12 +30,13 @@ body {
   justify-content: space-between;
   color: white;
   padding: 10px;
-  gap: 10%;
+  gap: 30px;
 }
 .navbar-link {
   padding: 5px;
   text-decoration: none;
   color: white;
+  margin: 0;
 }
 .initial {
   color: white;
@@ -59,9 +60,8 @@ body {
   object-fit: cover;
   border-radius: 10px;
   align-items: center;
-  margin: 25%;
-  padding: 20px;
-  margin-top: 5%;
+  width: 80vw;
+  margin-left: 30%;
   justify-content: center;
 }
 
@@ -99,6 +99,9 @@ body {
   gap: 10px;
   margin-left: 15%;
 }
+.navbar-anchor {
+  color: white;
+}
 
 .h3 {
   justify-content: center;
@@ -111,8 +114,35 @@ body {
   object-fit: contain;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
-  .carousel {
-    flex-direction: column;
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    left: -100%;
+    transition: all 0.3s linear;
+  }
+
+  #navbar.active {
+    left: 0;
+  }
+  .navbar-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .slide {
+    width: 230px;
+    text-align: center;
+  }
+
+  .owl-stage {
+    display: flex;
+    place-items: center;
+  }
+
+  .owl-carousel {
+    margin-left: 18%;
+    
   }
 }

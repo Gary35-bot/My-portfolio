@@ -6,12 +6,11 @@
 body {
   font-family: sans-serif;
   height: 100vh;
-  overflow: hidden;
   background-image: url(./images/suit.jpg);
+  font-family: sans-serif;
 }
 .img {
-  object-fit: cover;
-  margin: 20px;
+  object-fit: contain;
 }
 #navbar {
   display: flex;
@@ -36,7 +35,7 @@ body {
   justify-content: space-between;
   color: white;
   padding: 10px;
-  gap: 10%;
+  gap: 30px;
 }
 .navbar-link {
   padding: 10px;
@@ -136,13 +135,73 @@ body {
   color: white;
 }
 
-.btn {
+.btn:hover {
   display: flex;
   justify-content: center;
+  color: white;
+  background-color: red;
+  transition: background-color 0.6s ease;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.btn {
+  background-color: orange;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+personalinfo {
+  gap: 30px;
+}
+.icon-2 {
+  gap: 30px;
+  padding: 10px;
+  color: white;
+}
+.navbar-anchor {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  #navbar {
+    left: -100%;
+    transition: all 0.3s linear;
+  }
+
+  #navbar.active {
+    left: 0;
+  }
+  .navbar-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .ContactInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+    display: flex;
+  }
+  .container-info {
+   
+  }
 }

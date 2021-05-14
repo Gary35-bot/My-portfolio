@@ -6,7 +6,6 @@
 body {
   font-family: sans-serif;
   height: 100vh;
-  overflow: hidden;
   background-image: url(./images/suit.jpg);
 }
 .img {
@@ -35,7 +34,7 @@ body {
   justify-content: space-between;
   color: white;
   padding: 10px;
-  gap: 10%;
+  gap: 30px;
 }
 .navbar-link {
   padding: 10px;
@@ -59,7 +58,7 @@ body {
   align-items: center;
   /* margin-bottom: 35%; */
 }
-.subheading {
+.heading {
   color: white;
   font-size: 30px;
   margin-bottom: 10px;
@@ -72,6 +71,35 @@ body {
 .surname {
   color: orange;
   font-size: 75px;
+}
+.navbar-icon {
+  color: white;
+}
+.navbar-anchor {
+  color: white;
+}
+.navbar-button {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    left: -100%;
+    transition: all 0.3s linear;
+  }
+
+  #navbar.active {
+    left: 0;
+  }
+  .navbar-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  
+
 }
 
 /* about page */

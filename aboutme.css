@@ -30,12 +30,13 @@ body {
   justify-content: space-between;
   color: white;
   padding: 10px;
-  gap: 10%;
+  gap: 30px;
 }
 .navbar-link {
   padding: 5px;
   text-decoration: none;
   color: white;
+  margin: 0;
 }
 .initial {
   color: white;
@@ -59,9 +60,8 @@ body {
   display: flex;
   flex-wrap: center;
   justify-content: center;
-  max-width: 100%;
+
   max-height: 500%;
-  height: 400%;
 }
 .aboutimg {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -117,17 +117,18 @@ body {
   border: none;
 }
 .CvButton:hover {
-  background-color: black;
-  transition: background-color 0.6s ease;
+  background-color: red;
+  transition: background-color 2s ease;
 }
 
 .Resume-1 {
-  width: 5%;
+  width: 2%;
   background-color: rgb(250, 1, 1);
   height: 100%;
   padding: 10%;
   grid-row-start: 1;
   grid-row-end: 5;
+  border-radius: 10px;
 }
 
 .ResumeContainer {
@@ -165,13 +166,13 @@ body {
   grid-column: 3;
   grid-row: 4;
 }
-.heading-1 {
-  font-size: 30px;
+.heading-12 {
+  font-size: 35px;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
   align-items: center;
   gap: 10px;
+  margin-top: 5%;
 }
 .bankground-style {
   display: flex;
@@ -187,15 +188,12 @@ body {
   align-items: center;
   margin-left: 100%;
   margin-top: 30%;
-
-  
 }
 .link {
   font-size: 110px;
   display: flex;
   justify-content: center;
   gap: 50px;
-
 }
 .background-style1 {
   background: rgba(240, 18, 18, 0.85);
@@ -206,11 +204,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: center;
-  margin: 5%;
-  margin-left:5%;
   padding: 5px;
-
-
 }
 
 .subheading-1 {
@@ -223,9 +217,51 @@ body {
 .heading-1 {
   display: flex;
   padding: 5px;
-  font-size: 30px;
-  margin-top: 10%;
+  font-size: 35px;
+  margin-bottom: 10%;
+  margin-left: 49%;
 }
-.icon-color{
+.icon-color {
   color: white;
+}
+.navbar-anchor {
+  color: white;
+}
+.emtyspace {
+  height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    left: -100%;
+    transition: all 0.3s linear;
+  }
+
+  #navbar.active {
+    left: 0;
+  }
+  .navbar-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .backgroundcard {
+    display: flex;
+    flex-direction: column;
+  }
+  .link {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    padding: 20px;
+  }
+  .heading-12 {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
 }
