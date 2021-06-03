@@ -54,7 +54,7 @@ body {
 }
 
 .landing {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +96,28 @@ body {
   color: orange;
   font-size: 20px;
   padding: 20px;
+}
+.icons-git {
+  display: flex;
+  justify-content: end;
+  margin-left: 5px;
+  padding: 20px;
+}
+.icons-footer {
+  font-size: 20px;
+  margin-right: 1%;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+.icons-footer:hover {
+  transition: ease-in 1s 1ms;
+  background-color: orange;
+}
+.lan-icons {
+  margin: 5px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 800px) {
