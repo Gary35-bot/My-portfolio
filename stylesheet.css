@@ -13,9 +13,7 @@ body {
     ),
     url(./images/suit.jpg);
 }
-.img {
-  object-fit: contain;
-}
+
 #navbar {
   display: flex;
   flex-direction: column;

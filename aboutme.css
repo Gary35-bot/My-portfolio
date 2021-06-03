@@ -60,21 +60,25 @@ body {
   display: flex;
   flex-wrap: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   max-height: 500%;
 }
 .aboutimg {
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  width: 300px;
-  padding: 10px;
-  margin: 10px;
-}
-.aboutimg {
+  height: 520px;
+  width: 410px;
   object-fit: cover;
-  margin: 20px;
+  object-position: -270px;
+  background: rgba(24, 23, 23, 1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.18);
 }
 .Me {
   color: orange;
@@ -96,15 +100,24 @@ body {
   color: white;
   font-size: 30px;
   justify-content: center;
+
   padding: 10px;
 }
 .contents {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
   margin: 20px;
   align-items: center;
   margin-top: 5px;
+  gap: 20px;
+}
+.subcontent {
+  line-height: 1.8;
+}
+.all_aboutme {
+  padding-right: 15px;
+  padding-left: 50px;
 }
 
 .CvButton {
@@ -211,7 +224,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: 25px;
-  padding: 10px;
+  padding: 0;
   margin: 5px;
 }
 .heading-1 {

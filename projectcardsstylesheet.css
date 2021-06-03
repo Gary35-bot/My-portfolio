@@ -10,7 +10,8 @@
   margin-top: 10%;
 }
 body {
-  background-size: cover;
+  background-color: #1a1a1a;
+  color: bisque;
 }
 .main {
   margin-left: 80px;
@@ -83,12 +84,10 @@ body {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 10px;
+  border-radius: 20px;
   margin: 20px;
   height: 400px;
-  width: 310px;
+  width: 300px;
   display: grid;
   justify-content: center;
   flex-direction: column;
@@ -98,21 +97,19 @@ body {
   background: rgba(253, 126, 20, 1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+  border-radius: 1px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: center;
-
-  flex: 1 1 150px;
-  flex: 0 1 150px;
   display: grid;
   place-items: center;
   align-items: center;
 }
-img {
+.projectimg {
   height: 250px;
   width: 300px;
-  object-fit: contain;
+  object-fit: fill;
+  border-radius: 1px;
 }
 
 .button-2 {
@@ -161,5 +158,4 @@ img {
     margin: 0;
     font-size: 25px;
   }
-  
 }
