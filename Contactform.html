@@ -14,36 +14,37 @@
     <link rel="stylesheet" href="aboutme.css">
     <link rel="stylesheet" href="projectcardsstylesheet.css">
 
+    <nav id="navbar">
+      <div class="initial">G.</div>
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="./index.html" class="navbar-anchor"><i class="fas fa-home"></i></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-anchor"
+            ><i class="fas fa-user-alt"></i
+          ></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./Projectscards.html" class="navbar-anchor"
+            ><i class="fas fa-project-diagram"></i
+          ></a>
+        </li>
+        </li>
+        <li class="navbar-link">
+          <a href="./testimonials.html" class="navbar-anchor"><i class="fas fa-scroll"></i></a>
+        </li>
+        <li class="navbar-link">
+          <a href="./Contactform.html" class="navbar-anchor"><i class="fab fa-wpforms"></i></a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
+    </nav>
   </head>
+
   <body>
 
-    <nav id="navbar">
-        <div class="initial">G.</div>
-        <ul class="navbar-links">
-          <li class="navbar-link">
-            <a href="./index.html" class="navbar-anchor"><i class="fas fa-home"></i></a>
-          </li>
-          <li class="navbar-link">
-            <a href="./about.html" class="navbar-anchor"
-              ><i class="fas fa-user-alt"></i
-            ></a>
-          </li>
-          <li class="navbar-link">
-            <a href="./Projectscards.html" class="navbar-anchor"
-              ><i class="fas fa-project-diagram"></i
-            ></a>
-          </li>
-          </li>
-          <li class="navbar-link">
-            <a href="./testimonials.html" class="navbar-anchor"><i class="fas fa-scroll"></i></a>
-          </li>
-          <li class="navbar-link">
-            <a href="./Contactform.html" class="navbar-anchor"><i class="fab fa-wpforms"></i></a>
-          </li>
-        </ul>
-        <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
-      </nav>
-
+  
       <div class="head">
         <h1 class="heading"><span class="Me">Contact </span>Me</span></h1>
       </div>
@@ -67,7 +68,7 @@
       method="POST"
       class="contact-form"
     >
-       <div class="form-group1">
+       <div id="form-group1">
           <div class="form-group" >
             <label class="form-label" for="Your Name">Your Name</label>
             <input
@@ -119,7 +120,7 @@
       
        <button class="btn" type="submit">submit</button>
   </form>
-      
+</div>   
   </body>
   <script src="./button.js"></script>
 </html>

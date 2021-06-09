@@ -20,7 +20,7 @@ body {
 #navbar {
   display: flex;
   flex-direction: column;
-  background-color: orange;
+  /* background-color: orange; */
   justify-content: center;
   align-items: flex-start;
   transition: all 0.3 linear;
@@ -94,7 +94,7 @@ body {
 }
 
 .card-items {
-  background: rgba(253, 126, 20, 1);
+  background: #dc3545;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 1px;
@@ -110,6 +110,7 @@ body {
   width: 300px;
   object-fit: fill;
   border-radius: 1px;
+  position: relative;
 }
 
 .button-2 {
@@ -117,19 +118,57 @@ body {
   justify-content: space-between;
   padding: 15px;
   margin: 5px;
-  flex-direction: column;
-  color: orange;
-  gap: 10px;
-  color: black;
 }
-
+.button-1 {
+  text-decoration: none;
+  color: white;
+}
+.button1 {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background: rgba(8, 8, 8, 0.25);
+  box-shadow: 0 5px 20px black;
+}
+.button1:hover {
+  transition: ease-in 1s 5ms;
+  background-color: orange;
+}
+.gitlink {
+  color: white;
+  text-decoration: none;
+}
 .info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  margin-top: 5%;
-  margin-bottom: -5%;
+}
+.image-overlay {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image-overlay > * {
+  transform: translate(1px);
+  margin: 20px;
+}
+.image-overlay:hover {
+  opacity: 1;
+  cursor: zoom-in;
+  transition: 1s 23ms;
 }
 
 @media screen and (max-width: 800px) {
