@@ -109,7 +109,6 @@ body {
   color: white;
   padding: 5px;
   border-radius: 50%;
-  
 }
 .icons-footer:hover {
   transition: ease-in 1s 1ms;
@@ -135,6 +134,12 @@ body {
     top: 20px;
     right: 20px;
     z-index: 100;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .surname {
+    font-size: 40px;
   }
 }
 
