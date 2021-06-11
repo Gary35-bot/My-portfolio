@@ -119,6 +119,18 @@ body {
   padding: 5px;
 }
 
+.navbar-button {
+  border: none;
+  font-size: 20px;
+  color: orange;
+
+  background: none;
+}
+.navbar-button:hover {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
 @media screen and (max-width: 800px) {
   #navbar {
     left: -100%;
@@ -140,6 +152,9 @@ body {
   }
   .surname {
     font-size: 40px;
+  }
+  .heading {
+    font-size: 20px;
   }
 }
 
