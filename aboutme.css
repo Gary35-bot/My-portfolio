@@ -204,7 +204,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-right: -20%;
+  margin-right: -60%;
 }
 .background-style1 {
   background: rgba(240, 18, 18, 0.85);
