@@ -1,7 +1,3 @@
-function toggleNavbar() {
-  document.getElementById("navbar").classList.toggle("active");
-}
-
 let cards = [
   {
     imgURL: "./images/Screenshot_2021-05-04 Contact Form.png",
@@ -19,7 +15,8 @@ let cards = [
     imgALT: "Photo",
     title: "TimeLine",
     techStack: "Html/CSS",
-    description: "This is a timeline I created using aos-animation",
+    description:
+      "This is a timeline I created using aos-animation",
     githubURL: "https://github.com/Gary35-bot/first-Contact-from-created",
     liveURL: "https://admiring-bardeen-57658c.netlify.app/",
   },
@@ -29,7 +26,8 @@ let cards = [
     imgALT: "Photo",
     title: "Testimonial-Slider",
     techStack: "Html/CSS",
-    description: "I used owl-carousel to create these testimonials.",
+    description:
+      "I used owl-carousel to create these testimonials.",
     githubURL: "https://github.com/Gary35-bot/Testomonial-slider",
     liveURL: "https://wizardly-clarke-0f2d34.netlify.app/",
   },
@@ -65,53 +63,54 @@ let cards = [
     githubURL: "https://github.com/Gary35-bot/tkinter-program",
     liveURL: "https://replit.com/@Gary35bot/UntriedThisSdk#main.py",
   },
+
 ];
 
-function createCard(cards) {
-  let createCard = `
-  <div class="Cards" techStack="${cards.techStack}">
-  <img class="projectimg" src="${cards.imgURL}" alt=""/>
-  <div class="image-overlay">
-    <p class="decrip-tion">${cards.description}</p>
-</div>
-  <div class="card-items"> 
-      <h2>${cards.techStack}</h2>
-      <h3>${cards.title}</h3>
+function createCard(cards){
+    let createCard =  
+`<div class="cardcontainer"
+techStack=${cards.techStack} > "<img src=${cards.imgURL}"
+alt ="${cards.imgALT}">
+    <h2>${cards.title}</h2>
+    <h3>${cards.techStack}</h3>
+    <p>${cards.description}</p>
+href="${card.githubURL}">Github</a>
+<a href="${card.liveProjectURL}">Live</a>
   </div>
-  <div class="button-2">
-  <button class="button1"><a class="button-1" href="${cards.githubURL}" target="_blank"><p class="gitlink">Github</p></a></button>
-  <button class="button1"><a class="button-1" href="${cards.liveURL}" target="_blank"><p class="gitlink">Live</p></a></button> 
-</div>
-</div>
-    `;
-  return createCard;
+  `;
+return createCard;
+
 }
 
 function renderCards() {
-  let cardcontainer = document.querySelector(".cardcontainer");
-  for (project of cards) {
-    let card = createCard(project);
-    cardcontainer.innerHTML += card;
-  }
+  let cards =
+  document.querySelector("./cards");
+  for (project of project) {
+      let card = createCard(project); 
+      cardcontainer.innerHTML += cards;  
+      
+  } 
 }
 
 renderCards();
 
 function filterCards(catergory) {
-  let cards = document.getElementsByClassName("Cards");
-  if (catergory == "All") {
-    for (project of cards) {
-      project.style.display = "block";
+    let cards = 
+document.getElementsByClassName("cards");
+if (catergory == "All") {
+    for (cards of cards) {
+        card.style.display = "block";
     }
     return;
-  }
+}
 
-  for (projects of cards) {
+for (cards of cards) {
     console.log(cards);
-    projects.style.display = "none";
-  }
-  let selectedCards = document.querySelectorAll(`[techStack='${catergory}']`);
-  for (card of selectedCards) {
-    card.style.display = "block";
-  }
+    card.style.display = "none";
+}
+    let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
+for (card of selectedCards) {
+  card.style.display = "block";
+}
+
 }
