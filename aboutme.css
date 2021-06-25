@@ -198,13 +198,13 @@ body {
   align-items: center;
   margin-left: 100%;
   margin-top: 30%;
-  margin-right: -15%;
 }
 .link {
   font-size: 110px;
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-right: -20%;
 }
 .background-style1 {
   background: rgba(240, 18, 18, 0.85);
