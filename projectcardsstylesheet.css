@@ -14,7 +14,7 @@ body {
   color: bisque;
 }
 .main {
-  margin-left: 90px;
+  margin-left: 10%;
 }
 
 #navbar {
@@ -74,11 +74,11 @@ body {
   color: white;
 }
 .cardcontainer {
-  margin: 5%;
+  margin: 10%;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin-left: 90px;
+  margin-left: 5%;
 }
 .Cards {
   background: rgba(8, 8, 8, 0.25);
