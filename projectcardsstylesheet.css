@@ -14,7 +14,7 @@ body {
   color: bisque;
 }
 .main {
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 #navbar {
@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin-left: 100px;
+  margin-left: 90px;
 }
 .Cards {
   background: rgba(8, 8, 8, 0.25);
